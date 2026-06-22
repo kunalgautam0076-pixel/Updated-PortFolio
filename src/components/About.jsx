@@ -14,7 +14,7 @@ const About = () => {
       },
       {
         role: 'Mern Stack Developer',
-        company: '',
+        company: 'DEALINTRA TECH PVT.LTD',
         duration: '2022 - 2024',
         description: 'Built responsive web platforms using React, Node.js, and advanced CSS frameworks. Optimized client side assets reducing load-times by 40% and improved search ranking metrics.',
       },
@@ -34,7 +34,7 @@ const About = () => {
       },
       {
         degree: '12th Grade - Science',
-        institution: 'Tech Academy Global',
+        institution: 'C.P & Berar Junior College',
         duration: '2022',
         description: '66 % with the Grade-A.',
       },
