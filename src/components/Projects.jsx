@@ -21,8 +21,8 @@ const Projects = () => {
       technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js', 'WebSockets'],
       gradColor: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%)',
       image: projectImage1,
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://example.com',
+      codeLink: 'https://github.com/example'
     },
     {
       id: 2,
@@ -32,8 +32,8 @@ const Projects = () => {
       technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Three.js'],
       gradColor: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
       image: projectImage2,
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://example.com',
+      codeLink: 'https://github.com/example'
     },
     {
       id: 3,
@@ -43,8 +43,8 @@ const Projects = () => {
       technologies: ['React', 'Express.js', 'Socket.io', 'Redis', 'Postgres'],
       gradColor: 'linear-gradient(135deg, #ec4899 0%, #06b6d4 100%)',
       image: projectImage3,
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://example.com',
+      codeLink: 'https://github.com/example'
     },
     {
       id: 4,
@@ -54,8 +54,8 @@ const Projects = () => {
       technologies: ['React Native', 'Redux', 'Stripe API', 'GraphQL'],
       gradColor: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)',
       image: projectImage4,
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://example.com',
+      codeLink: 'https://github.com/example'
     },
     {
       id: 5,
@@ -65,8 +65,8 @@ const Projects = () => {
       technologies: ['React', 'Framer Core', 'CSS Variables', 'Storybook'],
       gradColor: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
       image: projectImage5,
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://example.com',
+      codeLink: 'https://github.com/example'
     },
     {
       id: 6,
@@ -76,8 +76,8 @@ const Projects = () => {
       technologies: ['React', 'MapBox API', 'PWA Sync', 'IndexedDB'],
       gradColor: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
       image: projectImage6,
-      demoLink: '#',
-      codeLink: '#'
+      demoLink: 'https://example.com',
+      codeLink: 'https://github.com/example'
     }
   ];
 
@@ -138,13 +138,13 @@ const Projects = () => {
 
                 {/* Card actions */}
                 <div className="project-links">
-                  <a href={project.demoLink} className="proj-link demo-btn">
+                  <a href={project.demoLink} className="proj-link demo-btn" target="_blank" rel="noreferrer">
                     <span>Live Demo</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="link-icon">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>
                   </a>
-                  <a href={project.codeLink} className="proj-link code-btn">
+                  <a href={project.codeLink} className="proj-link code-btn" target="_blank" rel="noreferrer">
                     <span>Source Code</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="link-icon">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
