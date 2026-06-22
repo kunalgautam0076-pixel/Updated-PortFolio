@@ -46,39 +46,39 @@ const Projects = () => {
       demoLink: 'https://example.com',
       codeLink: 'https://github.com/example'
     },
-    {
-      id: 4,
-      title: 'Kora E-Commerce Portal',
-      category: 'mobile',
-      description: 'Fully responsive mobile application with fast catalog indexing, secure stripe integration, and micro-animations for card additions.',
-      technologies: ['React Native', 'Redux', 'Stripe API', 'GraphQL'],
-      gradColor: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)',
-      image: projectImage4,
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com/example'
-    },
-    {
-      id: 5,
-      title: 'Helios Design Kit',
-      category: 'frontend',
-      description: 'Modular SVG component ecosystem specializing in complex floating charts, glass buttons, and scroll-bound timeline grids.',
-      technologies: ['React', 'Framer Core', 'CSS Variables', 'Storybook'],
-      gradColor: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
-      image: projectImage5,
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com/example'
-    },
-    {
-      id: 6,
-      title: 'Terra Journey Planner',
-      category: 'mobile',
-      description: 'Interactive geological route mapping engine for hikers featuring local coordinates storage and collaborative trip timelines.',
-      technologies: ['React', 'MapBox API', 'PWA Sync', 'IndexedDB'],
-      gradColor: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
-      image: projectImage6,
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com/example'
-    }
+    // {
+    //   id: 4,
+    //   title: 'Kora E-Commerce Portal',
+    //   category: 'mobile',
+    //   description: 'Fully responsive mobile application with fast catalog indexing, secure stripe integration, and micro-animations for card additions.',
+    //   technologies: ['React Native', 'Redux', 'Stripe API', 'GraphQL'],
+    //   gradColor: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)',
+    //   image: projectImage4,
+    //   demoLink: 'https://example.com',
+    //   codeLink: 'https://github.com/example'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Helios Design Kit',
+    //   category: 'frontend',
+    //   description: 'Modular SVG component ecosystem specializing in complex floating charts, glass buttons, and scroll-bound timeline grids.',
+    //   technologies: ['React', 'Framer Core', 'CSS Variables', 'Storybook'],
+    //   gradColor: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
+    //   image: projectImage5,
+    //   demoLink: 'https://example.com',
+    //   codeLink: 'https://github.com/example'
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Terra Journey Planner',
+    //   category: 'mobile',
+    //   description: 'Interactive geological route mapping engine for hikers featuring local coordinates storage and collaborative trip timelines.',
+    //   technologies: ['React', 'MapBox API', 'PWA Sync', 'IndexedDB'],
+    //   gradColor: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
+    //   image: projectImage6,
+    //   demoLink: 'https://example.com',
+    //   codeLink: 'https://github.com/example'
+    // }
   ];
 
   const filteredProjects = filter === 'all'
