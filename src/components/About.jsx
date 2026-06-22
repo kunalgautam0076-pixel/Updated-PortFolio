@@ -27,16 +27,22 @@ const About = () => {
     ],
     education: [
       {
-        degree: 'Bachelor of Science in Computer Science',
-        institution: 'National Institute of Technology',
-        duration: '2017 - 2021',
+        degree: 'Bachelor of Technology in Computer Science & Engineering',
+        institution: 'S.B Jain Institute Of Technology, Management & Research',
+        duration: '2022 - 2026',
         description: 'Specialized in Software Engineering, Database Systems, and Web Technologies. Graduated with Honors and led the Web Development Club.',
       },
       {
-        degree: 'Full-Stack Software Development Bootcamp',
+        degree: '12th Grade - Science',
         institution: 'Tech Academy Global',
-        duration: '2021',
-        description: 'Immersive 6-month specialized program focusing on MERN stack, cloud deployments, system design, and algorithmic problem-solving.',
+        duration: '2022',
+        description: '66 % with the Grade-A.',
+      },
+      {
+        degree: '10th Grade',
+        institution: 'AngelKids Convent',
+        duration: '2020',
+        description: '81% with the Grade-A.',
       }
     ],
     certifications: [
