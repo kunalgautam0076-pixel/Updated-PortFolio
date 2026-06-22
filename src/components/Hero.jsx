@@ -104,7 +104,7 @@ const Hero = () => {
                   <span></span>
                   <span></span>
                 </div>
-                <span className="window-title">raju_c.exe</span>
+                <span className="window-title">Kunal_c.exe</span>
               </div>
               
               <div className="card-avatar-container">

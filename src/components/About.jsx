@@ -7,14 +7,14 @@ const About = () => {
   const tabData = {
     experience: [
       {
-        role: 'Senior Full-Stack Developer',
-        company: 'Apex Tech Solutions',
-        duration: '2024 - Present',
+        role: 'Full-Stack Developer',
+        company: 'TARS TECHNOLOGY PVT.KTD',
+        duration: '2025 - 2026',
         description: 'Architecting high-scale React web applications. Collaborating with cross-functional product and design teams to deliver slick user interfaces, state management systems, and microservices.',
       },
       {
-        role: 'Software Engineer',
-        company: 'PixelPerfect Web Studio',
+        role: 'Mern Stack Developer',
+        company: '',
         duration: '2022 - 2024',
         description: 'Built responsive web platforms using React, Node.js, and advanced CSS frameworks. Optimized client side assets reducing load-times by 40% and improved search ranking metrics.',
       },
@@ -76,7 +76,7 @@ const About = () => {
               <span className="text-gradient">Design & Code</span>
             </h3>
             <p className="narrative-text">
-              I am a passionate software developer dedicated to crafting digital products that are not only functional but visually captivating. I bridge the gap between high-performance backends and delightful frontend experiences.
+              Hello everyone I'm Kunal Gautam, a passionate full-stack developer who loves building modern, scalable and interactive web applications.
             </p>
             <p className="narrative-text">
               My design philosophy is rooted in clean grids, glassmorphism aesthetics, fluid motion, and micro-interactions. I believe a website is an digital ecosystem that should feel alive, responsive, and intuitive.
