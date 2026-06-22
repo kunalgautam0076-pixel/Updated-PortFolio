@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import projectImage1 from '../assets/project-1.svg';
-import projectImage2 from '../assets/project-2.svg';
-import projectImage3 from '../assets/project-3.svg';
-import projectImage4 from '../assets/project-4.svg';
-import projectImage5 from '../assets/project-5.svg';
+import projectImage1 from '../assets/Project 1.jpeg';
+import projectImage2 from '../assets/project 2.jpeg';
+import projectImage3 from '../assets/Project 3.jpeg';
+import projectImage4 from '../assets/Project 4.jpeg';
+import projectImage5 from '../assets/Project 5.jpeg';
 import projectImage6 from '../assets/project-6.svg';
 
 const Projects = () => {
@@ -15,7 +15,7 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      title: 'Novus SaaS Dashboard',
+      title: 'Messato - a Food Delivery App',
       category: 'fullstack',
       description: 'A comprehensive cloud intelligence dashboard offering real-time system monitoring, user behavior telemetry, and granular billing logs.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js', 'WebSockets'],
