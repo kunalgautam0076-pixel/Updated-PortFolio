@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import projectImage1 from '../assets/project-1.svg';
+import projectImage2 from '../assets/project-2.svg';
+import projectImage3 from '../assets/project-3.svg';
+import projectImage4 from '../assets/project-4.svg';
+import projectImage5 from '../assets/project-5.svg';
+import projectImage6 from '../assets/project-6.svg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -14,6 +20,7 @@ const Projects = () => {
       description: 'A comprehensive cloud intelligence dashboard offering real-time system monitoring, user behavior telemetry, and granular billing logs.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js', 'WebSockets'],
       gradColor: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%)',
+      image: projectImage1,
       demoLink: '#',
       codeLink: '#'
     },
@@ -24,6 +31,7 @@ const Projects = () => {
       description: 'An interactive Web3 tracker showing live token price valuations, historic ledger records, and secure cryptographic seed encryptions.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Three.js'],
       gradColor: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
+      image: projectImage2,
       demoLink: '#',
       codeLink: '#'
     },
@@ -34,6 +42,7 @@ const Projects = () => {
       description: 'Ultra-low latency socket communication server supporting end-to-end user encryption, media shares, and interactive status boards.',
       technologies: ['React', 'Express.js', 'Socket.io', 'Redis', 'Postgres'],
       gradColor: 'linear-gradient(135deg, #ec4899 0%, #06b6d4 100%)',
+      image: projectImage3,
       demoLink: '#',
       codeLink: '#'
     },
@@ -44,6 +53,7 @@ const Projects = () => {
       description: 'Fully responsive mobile application with fast catalog indexing, secure stripe integration, and micro-animations for card additions.',
       technologies: ['React Native', 'Redux', 'Stripe API', 'GraphQL'],
       gradColor: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)',
+      image: projectImage4,
       demoLink: '#',
       codeLink: '#'
     },
@@ -54,6 +64,7 @@ const Projects = () => {
       description: 'Modular SVG component ecosystem specializing in complex floating charts, glass buttons, and scroll-bound timeline grids.',
       technologies: ['React', 'Framer Core', 'CSS Variables', 'Storybook'],
       gradColor: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
+      image: projectImage5,
       demoLink: '#',
       codeLink: '#'
     },
@@ -64,6 +75,7 @@ const Projects = () => {
       description: 'Interactive geological route mapping engine for hikers featuring local coordinates storage and collaborative trip timelines.',
       technologies: ['React', 'MapBox API', 'PWA Sync', 'IndexedDB'],
       gradColor: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
+      image: projectImage6,
       demoLink: '#',
       codeLink: '#'
     }
@@ -103,6 +115,11 @@ const Projects = () => {
                 className="project-banner"
                 style={{ background: project.gradColor }}
               >
+                <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  className="project-image"
+                />
                 <div className="banner-pattern"></div>
                 <span className="project-category-badge">{project.category}</span>
               </div>

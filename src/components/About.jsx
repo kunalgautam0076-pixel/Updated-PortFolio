@@ -94,11 +94,11 @@ const About = () => {
             <div className="personal-details">
               <div className="detail-item">
                 <span className="detail-label">Location</span>
-                <span className="detail-val">Mumbai, India</span>
+                <span className="detail-val">NAGPUR, India</span>
               </div>
               <div className="detail-item">
                 <span className="detail-label">Email</span>
-                <span className="detail-val">raju.chawale@email.com</span>
+                <span className="detail-val">kunalgautam0076@email.com</span>
               </div>
               <div className="detail-item">
                 <span className="detail-label">Freelance</span>
