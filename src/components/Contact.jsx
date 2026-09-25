@@ -38,6 +38,13 @@ const Contact = () => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
+    // Advanced Email Validation Regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setSubmitStatus('invalid_email');
+      return;
+    }
+
     setSubmitStatus('sending');
 
     const templateParams = {
@@ -101,7 +108,7 @@ const Contact = () => {
                 </div>
                 <div className="card-details">
                   <span className="card-lbl">Email Me</span>
-                  <a href="mailto:raju.chawale@email.com" className="card-val">kunalgautam0076@email.com</a>
+                  <a href="mailto:kunalgautam0076@email.com" className="card-val">kunalgautam0076@email.com</a>
                 </div>
               </div>
 
@@ -153,6 +160,28 @@ const Contact = () => {
                 </div>
                 <h3>Unable to Send Message</h3>
                 <p>Something went wrong. Please try again or email directly at kunalgautam0076@email.com.</p>
+                <button 
+                  className="btn btn-outline" 
+                  style={{ marginTop: '20px' }}
+                  onClick={() => setSubmitStatus('idle')}
+                >
+                  Try Again
+                </button>
+              </div>
+            ) : submitStatus === 'invalid_email' ? (
+              <div className="error-overlay" style={{ borderColor: 'rgba(236, 72, 153, 0.4)' }}>
+                <div className="error-icon-wrapper" style={{ background: 'rgba(236, 72, 153, 0.15)', color: '#ec4899' }}>
+                  <span>@</span>
+                </div>
+                <h3>Invalid Email Address</h3>
+                <p>Please enter a correct email address so we can reply to you!</p>
+                <button 
+                  className="btn form-submit-btn" 
+                  style={{ marginTop: '20px', background: 'var(--gradient-brand)', color: 'white', border: 'none' }}
+                  onClick={() => setSubmitStatus('idle')}
+                >
+                  Correct Email
+                </button>
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit}>

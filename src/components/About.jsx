@@ -8,7 +8,7 @@ const About = () => {
     experience: [
       {
         role: 'Full-Stack Developer',
-        company: 'TARS TECHNOLOGY PVT.KTD',
+        company: 'TARS TECHNOLOGY PVT.LTD',
         duration: '2025 - 2026',
         description: 'Architecting high-scale React web applications. Collaborating with cross-functional product and design teams to deliver slick user interfaces, state management systems, and microservices.',
       },
