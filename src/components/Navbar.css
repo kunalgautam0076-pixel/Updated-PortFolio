@@ -220,3 +220,20 @@
     display: flex;
   }
 }
+
+@media (max-width: 480px) {
+  .mobile-drawer {
+    width: 100%;
+  }
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+  .theme-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

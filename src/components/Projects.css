@@ -216,3 +216,19 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 480px) {
+  .project-details {
+    padding: 16px;
+  }
+  .project-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .proj-link {
+    width: 100%;
+  }
+  .project-banner {
+    height: 160px;
+  }
+}

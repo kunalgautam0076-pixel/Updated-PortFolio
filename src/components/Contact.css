@@ -354,3 +354,22 @@ a.card-val:hover {
     padding: 30px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-info-heading {
+    font-size: 1.8rem;
+  }
+  .contact-info-card {
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .card-icon-wrapper {
+    width: 42px;
+    height: 42px;
+  }
+  .contact-form-container {
+    padding: 20px 16px;
+  }
+}

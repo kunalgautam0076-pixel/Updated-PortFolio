@@ -204,3 +204,22 @@
     top: 8px;
   }
 }
+
+@media (max-width: 480px) {
+  .about-narrative {
+    padding: 16px;
+  }
+  .narrative-heading {
+    font-size: 1.5rem;
+  }
+  .tabs-content {
+    padding: 16px;
+  }
+  .tab-btn {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+}

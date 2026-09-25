@@ -99,15 +99,22 @@ const Navbar = ({ theme, toggleTheme }) => {
         </div>
       </div>
 
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`mobile-overlay ${mobileMenuOpen ? 'open' : ''}`}
+        onClick={() => setMobileMenuOpen(false)}
+      ></div>
+
       {/* Mobile Navigation Drawer */}
       <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-links">
-          {navLinks.map((link) => (
+          {navLinks.map((link, idx) => (
             <a
               key={link.name}
               href={link.href}
               className={`mobile-link ${activeSection === link.name.toLowerCase() ? 'active' : ''}`}
               onClick={(e) => handleLinkClick(e, link.href)}
+              style={{ animationDelay: `${0.1 + idx * 0.1}s` }}
             >
               {link.name}
             </a>
